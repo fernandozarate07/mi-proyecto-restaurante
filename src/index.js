@@ -1,3 +1,4 @@
+// index.js
 import {loadHome} from "./modules/home.js";
 import {loadMenu} from "./modules/menu.js"
 import {loadContact} from "./modules/contact.js"
@@ -10,7 +11,7 @@ document.body.style.backgroundImage = `url(${backgroundImg})`;
 
 // Clear
 function clear(){
-    const mainContent = document.getElementById('main-content');
+    const mainContent = document.querySelector('.main__content');
     mainContent.innerHTML='';
 }
 // Home Event

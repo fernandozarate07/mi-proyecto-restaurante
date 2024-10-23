@@ -66,11 +66,22 @@ body{
     gap: 20px;
 }
 .pizza__card{
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    background-color: var(--colorBackgroundBlur);
+    backdrop-filter: blur(10px);
+    color: var(--colorWhite);
+}
+.about{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--colorBackgroundBlur);
     backdrop-filter: blur(10px);
     color: var(--colorWhite);

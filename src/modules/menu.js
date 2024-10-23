@@ -1,3 +1,4 @@
+// menu.js
 function loadMenu() {
     const pizzas = [
         {
@@ -46,7 +47,7 @@ function loadMenu() {
         menuContainer.appendChild(pizzaCard);
     });
 
-    const mainContent = document.getElementById('main-content');
+    const mainContent = document.querySelector('.main__content');
     mainContent.appendChild(menuContainer);
 }
 export {loadMenu};
