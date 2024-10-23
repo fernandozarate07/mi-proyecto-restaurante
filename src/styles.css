@@ -2,7 +2,6 @@ body{
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-image: url('./img/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +45,7 @@ body{
 }
 
 /* Home */
-.home{
+.main-content{
     height: 100%;
     width: 100%;
     display: flex;
@@ -57,4 +56,22 @@ body{
 .home__img{
     width: 400px;
     height: 400px;
+}
+.menu__container{
+    height: 80%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+.pizza__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--colorBackgroundBlur);
+    backdrop-filter: blur(10px);
+    color: var(--colorWhite);
 }
