@@ -1,0 +1,12 @@
+:root{
+    --colorBlack: #000000;
+    --colorWhite: #FFFFFF;
+    --colorRed: #FF5733;
+    --colorYalow: #FFC300;
+    --colorBackgroundBlur: rgba(128, 128, 128, 0.2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}

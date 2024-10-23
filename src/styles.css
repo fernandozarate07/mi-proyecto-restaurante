@@ -1,0 +1,46 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-image:url(img/delicious-pizza-studio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--colorBackgroundBlur);
+    backdrop-filter: blur(10px);
+}
+.logo{
+    font-family: 'Lobster', cursive;
+    font-size: calc(3rem + 1vw);
+    color: var(--colorWhite);
+}
+.nav{
+    display: flex;
+    gap: 20px;
+}
+.nav__item{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--colorBlack);
+    background-color: var(--colorYalow);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+    background-color: var(--colorBackgroundBlur);
+    backdrop-filter: blur(10px);
+    color: var(--colorWhite);
+}
