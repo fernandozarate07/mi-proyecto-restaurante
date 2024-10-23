@@ -44,3 +44,17 @@ body{
     backdrop-filter: blur(10px);
     color: var(--colorWhite);
 }
+
+/* Home */
+.home{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.home__img{
+    width: 400px;
+    height: 400px;
+}
