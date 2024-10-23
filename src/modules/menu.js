@@ -1,4 +1,3 @@
-// menu.js
 function loadMenu() {
     const pizzas = [
         {
@@ -39,7 +38,6 @@ function loadMenu() {
         const pizzaIngredients = document.createElement('p');
         pizzaIngredients.textContent = `Ingredients: ${pizza.ingredients.join(', ')}`;
 
-        // Append elements to the pizza card
         pizzaCard.appendChild(pizzaTitle);
         pizzaCard.appendChild(pizzaPrice);
         pizzaCard.appendChild(pizzaIngredients);
@@ -50,4 +48,5 @@ function loadMenu() {
     const mainContent = document.querySelector('.main__content');
     mainContent.appendChild(menuContainer);
 }
-export {loadMenu};
+
+export { loadMenu };

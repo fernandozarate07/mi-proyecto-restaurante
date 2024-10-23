@@ -1,34 +1,36 @@
-// index.js
-import {loadHome} from "./modules/home.js";
-import {loadMenu} from "./modules/menu.js"
-import {loadContact} from "./modules/contact.js"
+import { loadHome } from "./modules/home.js";
+import { loadMenu } from "./modules/menu.js";
+import { loadContact } from "./modules/contact.js";
 import './root.css';
 import './styles.css';
 
-// body Background
+// Cargar imagen de fondo
 import backgroundImg from './img/background.jpg';
 document.body.style.backgroundImage = `url(${backgroundImg})`;
 
-// Clear
-function clear(){
+// Función para limpiar el contenido
+function clear() {
     const mainContent = document.querySelector('.main__content');
-    mainContent.innerHTML='';
+    mainContent.innerHTML = '';
 }
-// Home Event
+
+// Evento para Home
 const homeBtn = document.getElementById('nav__home');
-homeBtn.addEventListener('click', ()=>{
-    clear()
+homeBtn.addEventListener('click', () => {
+    clear();
     loadHome();
-})
-// Menu Event
+});
+
+// Evento para Menu
 const menuBtn = document.getElementById('nav__menu');
-homeBtn.addEventListener('click', ()=>{
-    clear()
+menuBtn.addEventListener('click', () => {
+    clear();
     loadMenu();
-})
-// Contact Event
+});
+
+// Evento para Contact
 const contactBtn = document.getElementById('nav__contact');
-homeBtn.addEventListener('click', ()=>{
-    clear()
+contactBtn.addEventListener('click', () => {
+    clear();
     loadContact();
-})
+});
