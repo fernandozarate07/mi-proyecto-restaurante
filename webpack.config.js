@@ -1,17 +1,17 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin'); // Asegúrate de haberlo instalado
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/', // Necesario para webpack-dev-server
+    publicPath: '/',
   },
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|svg)$/i, 
+        test: /\.(png|jpe?g|gif|svg|avif|jpg)$/i, 
         use: [
           {
             loader: 'file-loader',
@@ -22,21 +22,25 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   mode: 'development',
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'), // Carpeta que se servirá
+      directory: path.join(__dirname, 'dist'),
     },
-    compress: true, // Activa la compresión
-    port: 8080, // Puedes cambiar el puerto si lo deseas
-    open: true, // Abre automáticamente el navegador
+    compress: true, 
+    port: 8080,
+    open: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './template.html', // Cambia a la ruta de tu archivo
-      filename: 'index.html', // El nombre del archivo HTML que se generará
+      template: './src/template.html',
+      filename: 'index.html',
     }),
   ],
 };

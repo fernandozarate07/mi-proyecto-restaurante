@@ -1,4 +1,10 @@
 import { loadHome } from "./modules/home";
+import './root.css';
+import './styles.css';
+
+// body Background
+import backgroundImg from './img/background.jpg';
+document.body.style.backgroundImage = `url(${backgroundImg})`;
 
 // Clear
 function clear(){

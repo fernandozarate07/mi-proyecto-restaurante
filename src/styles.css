@@ -2,7 +2,7 @@ body{
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-image:url(img/delicious-pizza-studio.jpg);
+    background-image: url('./img/background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
